@@ -9,18 +9,53 @@ class TodosScreen extends StatelessWidget {
   // Requiring the list of todos.
   TodosScreen({super.key});
 
-  final List<Article> todos = List.generate(
-    20,
-    (i) => Article(
+  final List<Article> todos = [
+    Article(
         "Dead ends with the tool",
         "Puffins itch with sticks",
         "Based on materials from the press service of Moscow State University. M. V. Lomonosova.",
         "Photo: Druzhinin E.R.",
-        "assets/images/image1.png",
-        "Birds with tools will no longer surprise anyone. Not only the famous New Caledonian crows and parrots use a variety of twigs, sticks and twigs, but also tree finches, herons, and common vultures (these hit ostrich eggs with stones to break them), and many others, but one thing that has never been seen with tools in their beaks is seabirds - which are thought to have too small a brain for this.\n\nHowever, a recent paper published in PNAS in which researchers from Oxford together with colleagues from Iceland write that puffins use tools. Several years ago, we accidentally noticed that a puffin took a twig in its beak and scratched its back with it. Subsequently, we managed to film another puffin on a video camera, which also scratched its chest with a stick. Puffins are not easy to observe, so, most likely, they use sticks more often, it s just that zoologists are not always able to notice this. The fact that both times were not an accident is evidenced by the fact that the puffins were from different colonies, located at a distance of 1700 km from each other. So perhaps tool use among birds is even more widespread than we think. At the same time, puffins remain the only ones whose manipulation of  tools of labor  is not associated with food. ",
+        "assets/images/image2.png",
+        "Birds with tools will no longer surprise anyone. Not only the famous New Caledonian crows and parrots use a variety of twigs, sticks and twigs, but also tree finches, herons, and common vultures (these hit ostrich eggs with stones to break them) , and many others, but one thing that has never been seen with tools in their beaks is seabirds - which are thought to have too small a brain for this.\n\nHowever, a recent paper published in PNAS in which researchers from Oxford together with colleagues from Iceland write that puffins use tools. Several years ago, we accidentally noticed that a puffin took a twig in its beak and scratched its back with it. Subsequently, we managed to film another puffin on a video camera, which also scratched its chest with a stick. Puffins are not easy to observe, so, most likely, they use sticks more often, it s just that zoologists are not always able to notice this. The fact that both times were not an accident is evidenced by the fact that the puffins were from different colonies, located at a distance of 1700 km from each other. So perhaps tool use among birds is even more widespread than we think. At the same time, puffins remain the only ones whose manipulation of tools of labor is not associated with food. ",
         ["#birds", "#behavior", "#animals"],
-        "22.01.2024"),
-  );
+        "01/22/2024"),
+    Article(
+        "Protective Pollen",
+        "Three dozen genes were selected for vegetarianism, ",
+        "Palaeontological Institute named after A.A. Borisyak RAS",
+        "Photo: Udochkin E.M.",
+        "assets/images/image1.png",
+        "Birds with tools will no longer surprise anyone. Not only the famous New Caledonian crows and parrots use a variety of twigs, sticks and twigs, but also tree finches, herons, and common vultures (these hit ostrich eggs with stones to break them) , and many others, but one thing that has never been seen with tools in their beaks is seabirds - which are thought to have too small a brain for this.\n\nHowever, a recent paper published in PNAS in which researchers from Oxford together with colleagues from Iceland write that puffins use tools. Several years ago, we accidentally noticed that a puffin took a twig in its beak and scratched its back with it. Subsequently, we managed to film another puffin on a video camera, which also scratched its chest with a stick. Puffins are not easy to observe, so, most likely, they use sticks more often, it s just that zoologists are not always able to notice this.",
+        ["#birds", "#behavior", "#animals"],
+        "01/22/2024"),
+    Article(
+        "Genes of vegetarianism",
+        "Puffins itch with sticks",
+        "Based on materials from the press service of Moscow State University. M. V. Lomonosova.",
+        "Photo: Druzhinin E.R.",
+        "assets/images/image3.png",
+        "Birds with tools will no longer surprise anyone. Not only the famous New Caledonian crows and parrots use a variety of twigs, sticks and twigs, but also tree finches, herons, and common vultures (these hit ostrich eggs with stones to break them) , and many others, but one thing that has never been seen with tools in their beaks is seabirds - which are thought to have too small a brain for this.\n\nHowever, a recent paper published in PNAS in which researchers from Oxford together with colleagues from Iceland write that puffins use tools. Several years ago, we accidentally noticed that a puffin took a twig in its beak and scratched its back with it. Subsequently, we managed to film another puffin on a video camera, which also scratched its chest with a stick. Puffins are not easy to observe, so, most likely, they use sticks more often, it s just that zoologists are not always able to notice this.",
+        ["#birds", "#behavior", "#animals"],
+        "01/22/2024"),
+    Article(
+        "The Weight of the Hole",
+        "The black hole has been weighed in a new way",
+        "Based on materials from the press service of M.V. Lomonosov Moscow State University.",
+        "Photo: NASA/JPL-Caltech",
+        "assets/images/image5.png",
+        "Birds with tools will no longer surprise anyone and many others, but one thing that has never been seen with tools in their beaks is seabirds - which are thought to have too small a brain for this.\n\nHowever, a recent paper published in PNAS in which researchers from Oxford together with colleagues from Iceland write that puffins use tools. Several years ago, we accidentally noticed that a puffin took a twig in its beak and scratched its back with it. Subsequently, we managed to film another puffin on a video camera, which also scratched its chest with a stick. Puffins are not easy to observe, so, most likely, they use sticks more often, it s just that zoologists are not always able to notice this. The fact that both times were not an accident is evidenced by the fact that the puffins were from different colonies, located at a distance of 1700 km from each other. So perhaps tool use among birds is even more widespread than we think. At the same time, puffins remain the only ones whose manipulation of tools of labor is not associated with food. ",
+        ["#birds", "#behavior", "#animals"],
+        "01/22/2024"),
+    Article(
+        "Amoebic preferences",
+        "Shell amoebas build relationships with mosses",
+        "The work was carried out with the support of the Russian Science Foundation",
+        "Photo: Chertoprud E. S.",
+        "assets/images/image4.png",
+        "Birds with tools will no longer surprise anyone. Recent paper published in PNAS in which researchers from Oxford together with colleagues from Iceland write that puffins use tools. Several years ago, we accidentally noticed that a puffin took a twig in its beak and scratched it back with it. Subsequently, we managed to film another puffin on a video camera, which also scratched its chest with a stick. Puffins are not easy to observe, so, most likely, they use sticks more often, it s just that zoologists are not always able to notice this. The fact that both times were not an accident is evidenced by the fact that the puffins were from different colonies, located at a distance of 1700 km from each other. So perhaps tool use among birds is even more widespread than we think. At the same time, puffins remain the only ones whose manipulation of tools of labor is not associated with food.",
+        ["#birds", "#behavior", "#animals"],
+        "01/22/2024"),
+  ];
 
   @override
   Widget build(BuildContext context) {
