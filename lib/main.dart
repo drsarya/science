@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:science/view/login_view.dart';
+import 'package:science/view/list_view.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Наука и жизнь',
-      home: LoginView(),
+      home: TodosScreen(),
     );
   }
 }

@@ -1,6 +1,8 @@
 // TODO Implement this library.import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'list_view.dart';
+
 class LoginView extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
   TextEditingController emailController = TextEditingController();
@@ -144,6 +146,12 @@ class LoginView extends StatelessWidget {
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
                         // Navigate the user to the Home page
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => TodosScreen( )),
+                        );
+
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(content: Text('Please fill input')),
