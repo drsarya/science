@@ -19,7 +19,7 @@ class TodosScreen extends StatelessWidget {
         "assets/images/image1.png",
         "Birds with tools will no longer surprise anyone. Not only the famous New Caledonian crows and parrots use a variety of twigs, sticks and twigs, but also tree finches, herons, and common vultures (these hit ostrich eggs with stones to break them), and many others, but one thing that has never been seen with tools in their beaks is seabirds - which are thought to have too small a brain for this.\n\nHowever, a recent paper published in PNAS in which researchers from Oxford together with colleagues from Iceland write that puffins use tools. Several years ago, we accidentally noticed that a puffin took a twig in its beak and scratched its back with it. Subsequently, we managed to film another puffin on a video camera, which also scratched its chest with a stick. Puffins are not easy to observe, so, most likely, they use sticks more often, it s just that zoologists are not always able to notice this. The fact that both times were not an accident is evidenced by the fact that the puffins were from different colonies, located at a distance of 1700 km from each other. So perhaps tool use among birds is even more widespread than we think. At the same time, puffins remain the only ones whose manipulation of  tools of labor  is not associated with food. ",
         ["#birds", "#behavior", "#animals"],
-    "22.01.2024"),
+        "22.01.2024"),
   );
 
   @override
@@ -176,7 +176,7 @@ class TodosScreen extends StatelessWidget {
                           ),
                           Container(
                             width: 470,
-                            height: 60,
+                            height: 45,
                             child: Stack(
                               children: [
                                 Padding(
@@ -186,8 +186,8 @@ class TodosScreen extends StatelessWidget {
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) =>
-                                              DetailScreen(article: todos[index]),
+                                          builder: (context) => DetailScreen(
+                                              article: todos[index]),
                                         ),
                                       );
                                     },
@@ -195,10 +195,14 @@ class TodosScreen extends StatelessWidget {
                                       backgroundColor: Color(0xFF4E62EB),
                                       shape: RoundedRectangleBorder(
                                           borderRadius:
-                                              BorderRadius.circular(10.0)),
+                                              BorderRadius.circular(25.0)),
                                       minimumSize: Size(80, 30),
                                       onPrimary: Colors.white,
-                                      textStyle: TextStyle(fontSize: 16),
+                                      textStyle: TextStyle(
+                                        fontSize: 16,
+                                        fontFamily: 'Inter',
+                                        fontWeight: FontWeight.w300,
+                                      ),
                                     ),
                                     child: const Text('Read'),
                                   ),

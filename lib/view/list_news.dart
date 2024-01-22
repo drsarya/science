@@ -37,7 +37,7 @@ class NewsScreen extends StatelessWidget {
                       children: [
                         Container(
                           width: 470,
-                          height: 60,
+                          height: 45,
                           child: Stack(children: [
                             Padding(
                               padding: const EdgeInsets.only(left: 270),
@@ -47,10 +47,14 @@ class NewsScreen extends StatelessWidget {
                                   backgroundColor: Color(0xFF4E62EB),
                                   shape: RoundedRectangleBorder(
                                       borderRadius:
-                                          BorderRadius.circular(10.0)),
+                                          BorderRadius.circular(25.0)),
                                   minimumSize: Size(80, 30),
                                   onPrimary: Colors.white,
-                                  textStyle: TextStyle(fontSize: 16),
+                                  textStyle: TextStyle(
+                                    fontSize: 16,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w300,
+                                  ),
                                 ),
                                 child: const Text('Read'),
                               ),
