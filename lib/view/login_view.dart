@@ -1,7 +1,7 @@
 // TODO Implement this library.import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'list_view.dart';
+import 'main_view.dart';
 
 class LoginView extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
@@ -11,9 +11,6 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Life and science"),
-      ),
       body: Form(
         key: _formKey,
         child: Padding(
@@ -22,8 +19,7 @@ class LoginView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 8, vertical: 20),
+                padding: const EdgeInsets.only(left: 8, top: 80),
                 child: Text(
                   'Life and science',
                   style: TextStyle(
@@ -105,7 +101,7 @@ class LoginView extends StatelessWidget {
                   decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
                         borderSide:
-                            BorderSide(width: 1, color: Color(0xFFD7FC3A)),
+                            BorderSide(width: 3, color: Color(0xFFD7FC3A)),
                         borderRadius: BorderRadius.circular(25.0),
                       ),
                       labelText: "Login"),
@@ -126,7 +122,7 @@ class LoginView extends StatelessWidget {
                   decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
                         borderSide:
-                            BorderSide(width: 1, color: Color(0xFFD7FC3A)),
+                            BorderSide(width: 3, color: Color(0xFFD7FC3A)),
                         borderRadius: BorderRadius.circular(25.0),
                       ),
                       labelText: "Password"),
@@ -148,10 +144,8 @@ class LoginView extends StatelessWidget {
                         // Navigate the user to the Home page
                         Navigator.pushReplacement(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => TodosScreen( )),
+                          MaterialPageRoute(builder: (context) => MainView()),
                         );
-
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(content: Text('Please fill input')),

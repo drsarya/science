@@ -1,18 +1,22 @@
 // TODO Implement this library.// TODO Implement this library.// TODO Implement this library.// TODO Implement this library.// TODO Implement this library.// TODO Implement this library.// TODO Implement this library.// TODO Implement this library.// TODO Implement this library.
 //
 
-
 class Article {
-  final String title;
+  String title;
   final String shortDescription;
   final String createdBy;
   final String imageAuthor;
   final String imagePath;
   final String description;
   final List<String> hashtags;
+  final String createdAt;
 
-  const Article(this.title, this.shortDescription, this.createdBy,
-      this.imageAuthor, this.imagePath, this.description, this.hashtags);
+  Article(this.title, this.shortDescription, this.createdBy, this.imageAuthor,
+      this.imagePath, this.description, this.hashtags, this.createdAt);
+
+  void set newTitle(String newTitle) {
+    title = newTitle;
+  }
 }
 
 // final todos = List.generate(
