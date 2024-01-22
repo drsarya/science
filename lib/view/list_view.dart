@@ -25,6 +25,7 @@ class TodosScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.white70 ,
           title: const Text('Todos'),
         ),
         //passing in the ListView.builder
@@ -125,24 +126,38 @@ class TodosScreen extends StatelessWidget {
                                       image: DecorationImage(
                                         image:
                                             AssetImage(todos[index].imagePath),
-                                        fit: BoxFit.fill,
+                                        fit: BoxFit.fitWidth,
                                       ),
                                     ),
                                   ),
                                 ),
                                 Positioned(
-                                  right: 0,
+                                  right: 10,
                                   top: 140,
                                   child: Container(
-                                    width: 110,
-                                    height: 22.28,
+                                    width: 130,
+                                    height: 30,
                                     child: Stack(
                                       children: [
                                         Positioned(
-                                          top: 5.78,
+                                          top: 10,
+                                          child: SizedBox(
+                                            width: 130,
+                                            height: 20,
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(25),
+                                                  color: Colors.white70),
+                                            ),
+                                          ),
+                                        ),
+                                        Positioned(
+                                          top: 12,
+                                          left: 10,
                                           child: SizedBox(
                                             width: 135,
-                                            height: 10.73,
+                                            height: 20,
                                             child: Text(
                                               todos[index].imageAuthor,
                                               style: TextStyle(
@@ -154,18 +169,6 @@ class TodosScreen extends StatelessWidget {
                                               ),
                                             ),
                                           ),
-                                        ),
-                                        Positioned(
-                                          top: 5.78,
-                                          child: SizedBox(
-                                            width: 135,
-                                            height: 25,
-                                            child: Container(
-                                              decoration: BoxDecoration(
-                                                  borderRadius: BorderRadius.circular(25),
-                                                  color: Colors.white30),
-                                          ),
-                                        ),
                                         ),
                                       ],
                                     ),
@@ -182,7 +185,15 @@ class TodosScreen extends StatelessWidget {
                                 Padding(
                                   padding: const EdgeInsets.only(left: 270),
                                   child: ElevatedButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              DetailScreen(article: todos[index]),
+                                        ),
+                                      );
+                                    },
                                     style: ElevatedButton.styleFrom(
                                       backgroundColor: Color(0xFF4E62EB),
                                       shape: RoundedRectangleBorder(
@@ -221,13 +232,13 @@ class TodosScreen extends StatelessWidget {
                     ),
                   ),
                   onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) =>
-                            DetailScreen(article: todos[index]),
-                      ),
-                    );
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     builder: (context) =>
+                    //         DetailScreen(article: todos[index]),
+                    //   ),
+                    // );
                   },
                 ),
               );
